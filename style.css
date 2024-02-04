@@ -426,6 +426,7 @@ html {
     overflow: hidden;
     color: #000;
     pointer-events: initial;
+    background: #000;
 }
 
 #page-3 .elem h1 {
@@ -977,6 +978,7 @@ html {
         text-align: left;
         justify-content: flex-end;
         gap: 2vh;
+        background: #dadada;
     }
 
     #page-3 .elem div {
