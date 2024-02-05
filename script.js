@@ -2,11 +2,17 @@
 function menuControl() {
 
     let menuBtn = document.querySelectorAll(".menu-btn")
-
     menuBtn.forEach((each) => {
+        each.addEventListener("click", (e) => {
+            if (document.querySelector(".menu-btn i.ri-menu-line").classList.contains("open")) {
+                document.querySelector(".menu-btn i.ri-menu-line").classList.remove("open");
+                document.querySelector(".menu-btn i.ri-close-line").classList.add("open");
+            }
+            else {
+                document.querySelector(".menu-btn i.ri-menu-line").classList.add("open");
+                document.querySelector(".menu-btn i.ri-close-line").classList.remove("open");
+            }
 
-
-        each.addEventListener("click", () => {
             document.querySelector(".navlist").classList.toggle("open")
             document.querySelector(".phone-nav .sautaboy.index-page ").classList.toggle("open")
         })

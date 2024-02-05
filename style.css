@@ -820,8 +820,14 @@ html {
         gap: 10px;
     }
 
-    .menu-btn i:nth-child(1) {
+    .menu-btn i.ri-close-line,
+    .menu-btn i.ri-menu-line {
         display: none;
+    }
+
+    .menu-btn i.ri-close-line.open,
+    .menu-btn i.ri-menu-line.open {
+        display: block;
     }
 
     #page-1 {
