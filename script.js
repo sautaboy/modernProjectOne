@@ -1,4 +1,19 @@
 
+function menuControl() {
+
+    let menuBtn = document.querySelectorAll(".menu-btn")
+
+    menuBtn.forEach((each) => {
+
+
+        each.addEventListener("click", () => {
+            document.querySelector(".navlist").classList.toggle("open")
+            document.querySelector(".phone-nav .sautaboy.index-page ").classList.toggle("open")
+        })
+
+    })
+}
+menuControl()
 
 
 
@@ -99,19 +114,3 @@ loader()
 // });
 
 
-
-function menuControl() {
-
-    let menuBtn = document.querySelectorAll(".menu-btn")
-
-    menuBtn.forEach((each) => {
-
-
-        each.addEventListener("click", () => {
-            document.querySelector(".navlist").classList.toggle("open")
-            document.querySelector(".phone-nav .sautaboy.index-page ").classList.toggle("open")
-        })
-
-    })
-}
-menuControl()
